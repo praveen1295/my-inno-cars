@@ -1,0 +1,42 @@
+.card-body {
+  width: 18rem;
+}
+.card-headings {
+  padding: 10px;
+}
+.headings2 {
+  display: flex;
+  gap: 5px;
+}
+.cartImg img {
+  width: 18rem;
+}
+.brand {
+  color: gray;
+}
+.modelType {
+  color: gray;
+}
+.card-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.btn {
+  padding: 10px 20px;
+  color: rgb(88, 88, 235);
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 600px) {
+  .card-body {
+    width: 24rem;
+  }
+  .headings2 {
+    display: block;
+  }
+  .cartImg img {
+    width: 20rem;
+  }
+}
