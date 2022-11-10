@@ -1,0 +1,15 @@
+.LearnModel {
+  width: 95vw;
+  margin: 0 auto;
+}
+.learnHeading {
+  padding: 20px;
+}
+.LearnModel img {
+  width: 36rem;
+}
+@media only screen and (max-width: 600px) {
+  .LearnModel img {
+    width: 24rem;
+  }
+}

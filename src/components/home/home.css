@@ -5,8 +5,9 @@
 
 .custom-button-group {
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   right: 0;
+  margin-top: 20px;
   width: 100%;
   display: flex;
   justify-content: flex-end;
@@ -15,9 +16,25 @@
 }
 
 .container-padding-bottom {
-  padding-bottom: 25px;
+  padding-bottom: 50px;
 }
-.btn {
-  border-radius: 50%;
+
+.icon {
+  font-size: 54px;
   cursor: pointer;
+}
+
+.filterBody {
+  width: 80vw;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  gap: 16px;
+}
+.filterBody .searchInput {
+  padding: 7px;
+  width: 50%;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: rgb(189, 184, 184);
 }

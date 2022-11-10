@@ -6,10 +6,19 @@ import "./home.css";
 
 const Home = () => {
   const [cars, setCars] = useState([]);
+  const [filterCar, setFilterCar] = useState([]);
+
+  const filterCars = (e) => {
+    let text = e.target.value;
+    const newCars = filterCar.filter((car) => car.bodyType.includes(text));
+
+    setCars(newCars);
+  };
   const getData = async () => {
     const response = await fetch("api/cars.json");
     const data = await response.json();
     setCars(data);
+    setFilterCar(data);
   };
   useEffect(() => {
     getData();
@@ -33,16 +42,27 @@ const Home = () => {
     },
   };
   return (
-    <Carousel
-      arrows={false}
-      containerClass="container-padding-bottom"
-      responsive={responsive}
-      customButtonGroup={<CustomButtonGroup cars={cars} />}
-    >
-      {cars.map((car) => {
-        return <Card key={car.id} car={car} />;
-      })}
-    </Carousel>
+    <React.Fragment>
+      <div className="filterBody">
+        <h2>Filter By: </h2>
+        <input
+          className="searchInput"
+          type="search"
+          placeholder="bodyType"
+          onChange={(e) => filterCars(e)}
+        />
+      </div>
+      <Carousel
+        arrows={false}
+        containerClass="container-padding-bottom"
+        responsive={responsive}
+        customButtonGroup={<CustomButtonGroup cars={cars} />}
+      >
+        {cars.map((car) => {
+          return <Card key={car.id} car={car} />;
+        })}
+      </Carousel>
+    </React.Fragment>
   );
 };
 
@@ -70,17 +90,15 @@ const CustomButtonGroup = ({
   };
   return (
     <div className="custom-button-group">
-      <button className="btn" onClick={() => previous1()}>
-        &lt;
-      </button>
-      <button className="btn" onClick={() => next1()}>
-        &gt;
-      </button>
-      {/* <button
-        onClick={() => goToSlide(Math.floor(Math.random() * totalItems + 1))}
-      >
-        Go to a random slide
-      </button> */}
+      <i
+        onClick={() => previous1()}
+        className="fa-solid fa-circle-chevron-left icon"
+      ></i>
+
+      <i
+        onClick={() => next1()}
+        className="fa-solid fa-circle-chevron-right icon"
+      ></i>
     </div>
   );
 };

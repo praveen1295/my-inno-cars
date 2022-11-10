@@ -1,0 +1,27 @@
+.shopModel {
+  width: 95vw;
+  margin: 0 auto;
+}
+.shopModel img {
+  width: 36rem;
+}
+.bodyType,
+.modelType {
+  color: gray;
+}
+.shopHeadings {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+  padding: 10px;
+}
+.btn {
+  padding: 7px;
+  border: none;
+  background-color: white;
+}
+@media only screen and (max-width: 600px) {
+  .shopModel img {
+    width: 24rem;
+  }
+}

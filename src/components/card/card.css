@@ -4,9 +4,9 @@
 .card-headings {
   padding: 10px;
 }
-.headings2 {
+.cartHeadings {
   display: flex;
-  gap: 5px;
+  gap: 10px;
 }
 .cartImg img {
   width: 18rem;
@@ -24,9 +24,13 @@
   padding: 10px;
 }
 .btn {
-  padding: 10px 20px;
+  font-size: 24px;
+  padding: 16px;
+  cursor: pointer;
+  text-decoration: none;
   color: rgb(88, 88, 235);
   font-weight: 700;
+  text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
