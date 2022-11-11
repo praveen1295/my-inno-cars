@@ -1,0 +1,15 @@
+.navContainer ul {
+  display: flex;
+  gap: 20px;
+  width: 100vw;
+  margin: 0 auto;
+  padding: 10px;
+  align-items: center;
+  background-color: black;
+  color: white;
+  /* justify-content: center; */
+}
+
+.navLink {
+  color: white;
+}

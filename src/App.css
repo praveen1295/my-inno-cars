@@ -2,14 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-.App {
-  padding: 20px;
-}
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  list-style-type: none;
+  text-decoration: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {

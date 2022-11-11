@@ -7,6 +7,7 @@ const ThankYou = () => {
         style={{
           width: "95",
           textAlign: "center",
+          margin: "20px ",
         }}
       >
         Thank You for Shopping

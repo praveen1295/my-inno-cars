@@ -42,9 +42,9 @@ const Home = () => {
     },
   };
   return (
-    <React.Fragment>
+    <div className="homeContainer">
       <div className="filterBody">
-        <h2>Filter By: </h2>
+        <h2>Filter By bodyType: </h2>
         <input
           className="searchInput"
           type="search"
@@ -62,7 +62,7 @@ const Home = () => {
           return <Card key={car.id} car={car} />;
         })}
       </Carousel>
-    </React.Fragment>
+    </div>
   );
 };
 
