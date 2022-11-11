@@ -5,11 +5,39 @@
 .learnHeading {
   padding: 20px;
 }
-.LearnModel img {
+
+.LearnModel .img {
+  display: flex;
+  width: 95vw;
+  margin: 0 auto;
+  gap: 16px;
+}
+
+.gotoshop {
+  padding: 7px;
+  background-color: rgb(11, 175, 175);
+  border: none;
+  outline: none;
+  color: white;
+}
+
+.gotoshop .learnLink {
+  color: white;
+}
+
+.LearnModel .img img {
   width: 36rem;
 }
 @media only screen and (max-width: 600px) {
-  .LearnModel img {
+  .LearnModel .img {
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    margin: 0 auto;
+    gap: 16px;
+  }
+
+  .LearnModel .img img {
     width: 22rem;
   }
 }

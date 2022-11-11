@@ -13,11 +13,13 @@ const Shop = () => {
         <div>
           <h1 className="bodyType">{bodyType}</h1>
           <h1 className="modelName">{modelName}</h1>
-          <h1 className="modelType">{modelType}</h1>
+          {/* <h1 className="modelType">{modelType}</h1> */}
         </div>
-        <Link className="btn" to={"/ThankYou"}>
-          Shop Now
-        </Link>
+        <button className="gotoshop">
+          <Link className="shopLink" to={"/ThankYou"}>
+            SHOP NOW
+          </Link>
+        </button>
       </div>
 
       <div className="img">

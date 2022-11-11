@@ -15,10 +15,15 @@
   margin: 5px;
   padding: 10px;
 }
-.btn {
+.gotoshop {
   padding: 7px;
+  background-color: rgb(11, 175, 175);
   border: none;
-  background-color: white;
+  outline: none;
+  color: white;
+}
+.gotoshop .shopLink {
+  color: white;
 }
 @media only screen and (max-width: 600px) {
   .shopModel img {

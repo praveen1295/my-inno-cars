@@ -3,11 +3,16 @@
   gap: 20px;
   width: 100vw;
   margin: 0 auto;
-  padding: 10px;
+  padding: 20px;
   align-items: center;
   background-color: black;
   color: white;
-  /* justify-content: center; */
+  justify-content: space-between;
+}
+
+.leftData {
+  display: flex;
+  gap: 10px;
 }
 
 .navLink {

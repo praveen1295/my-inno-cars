@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./learn.css";
 import { useParams, useLocation } from "react-router-dom";
 
@@ -16,6 +17,24 @@ const Learn = () => {
 
       <div className="img">
         <img src={imageUrl} alt="" />
+        <div className="description">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+            dolorum expedita consequuntur ipsum voluptates provident labore
+            eaque vitae! Ut maiores ullam dolor nihil laboriosam, ducimus
+            libero, aspernatur repellendus alias assumenda labore nostrum illo
+            itaque fuga doloribus dolorum minus sequi quaerat. Quasi, hic?
+            Ipsum, debitis nam voluptate unde ducimus commodi? Incidunt a
+            temporibus nulla quos iure aspernatur inventore?
+          </p>
+          <br />
+          <br />
+          <button className="gotoshop">
+            <Link className="learnLink" to={"/ThankYou"}>
+              SHOP NOW
+            </Link>
+          </button>
+        </div>
       </div>
     </div>
   );
