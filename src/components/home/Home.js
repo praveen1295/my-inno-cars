@@ -10,7 +10,9 @@ const Home = () => {
 
   const filterCars = (e) => {
     let text = e.target.value;
-    const newCars = filterCar.filter((car) => car.bodyType.includes(text));
+    const newCars = filterCar.filter((car) =>
+      car.bodyType.toUpperCase().includes(text.toUpperCase())
+    );
 
     setCars(newCars);
   };
