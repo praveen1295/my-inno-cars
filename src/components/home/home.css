@@ -36,3 +36,16 @@
   border-radius: 5px;
   background-color: rgb(189, 184, 184);
 }
+
+@media only screen and (max-width: 600px) {
+  .filterBody {
+    width: 80vw;
+    margin: 10px;
+    display: flex;
+    gap: 10px;
+  }
+  .filterBody .searchInput {
+    padding: 5px;
+    width: 70%;
+  }
+}
